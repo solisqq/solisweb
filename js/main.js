@@ -7,6 +7,9 @@ $(document).ready(function (){
 	main_start_pos = 0;
 	/*/Pages*/
 
+	$('#cloud').addClass('active');
+	$('#name_main').addClass('active');
+
 	$(window).scroll(function() {//OnScrollChange
 		var position = $(document).scrollTop(); //Position
 	});
