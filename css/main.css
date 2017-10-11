@@ -57,6 +57,7 @@ h4 { font-size: 18px; font-weight: 300; padding:0; margin:0;}
 .content_text { text-align: center; position: relative; animation-duration: 0s; margin-top: 250px; z-index: -10;}
 .grey_bar { width:100%; position: relative; background: #2f2f2f; text-align: center;}
 .grey_bar .bar_text {margin-top:30px; margin-bottom: 30px; position: relative; width: 50%; color: #D2D3CF; text-align: center; display:inline-block;}
+#skills-content { }
 
 a:hover {text-decoration: none;}
 
