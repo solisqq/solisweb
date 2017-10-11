@@ -32,7 +32,7 @@ h4 { font-size: 18px; font-weight: 300; padding:0; margin:0;}
 	color: #2f2f2f;
 	z-index: 10;
 	text-align: center;
-	margin-top: 10%;
+	position: relative;
 }
 
 #name_main .description {
@@ -47,18 +47,18 @@ h4 { font-size: 18px; font-weight: 300; padding:0; margin:0;}
 #name_main.active .second {display:inline; color: rgba(47,47,47,0.9);}
 #name_main.active .third {display:inline; color: rgba(47,47,47,0.9);}
 
-#cloud {position:absolute; width: 350px; height: 150px;background: rgba(255,162,48,0); transition: background 4s ease-in-out;border-radius: 100px;-webkit-border-radius: 100px;-moz-border-radius: 100px; top: 40%; transform: translateY(-50%); left: 50%; transform: translateX(-50%);}
-#cloud.active {background: rgba(255,162,48,0.6);}
+#cloud {position:relative; transition: background 4s ease-in-out;border-radius: 100px;-webkit-border-radius: 100px;-moz-border-radius: 100px; left: 50%; transform: translateX(-50%); margin-top:20%;}
 .triangle {width: 0;height: 0;border-style: solid;border-width: 30px 30px 0 30px;border-color: transparent transparent transparent transparent; position: absolute; bottom: 2%; transform: translateY(-50%); left: 50%; transform: translateX(-50%);
 	animation-duration: 1s; animation-name: blinkk; animation-iteration-count: infinite; animation-direction: alternate; transition: border-color 1s ease-in-out;}
 .triangle.no-anim { border-color: transparent transparent transparent transparent; animation-duration: 0s;}
-.circle { background: rgba(47,47,47,0.9); color:rgba(250,152,40,1); border-radius: 50%;width: 100px;height: 100px; position:relative; left: 50%; transform: translateX(-50%); margin-top: 600px; transition: background 0.25s ease-in-out; }
+.circle { background: rgba(47,47,47,0.9); color:rgba(250,152,40,1); border-radius: 50%;width: 100px;height: 100px; position:relative; left: 50%; transform: translateX(-50%); margin-top: 100px; transition: background 0.25s ease-in-out; }
 .circle:hover { background: rgba(234,142,37,0.8); color: rgba(47,47,47,1); text-decoration: none;}
 .content_text { text-align: center; position: relative; animation-duration: 0s; margin-top: 250px; z-index: -10;}
 .grey_bar { width:100%; position: relative; background: #2f2f2f; text-align: center;}
 .grey_bar .bar_text {margin-top:30px; margin-bottom: 30px; position: relative; width: 50%; color: #D2D3CF; text-align: center; display:inline-block;}
 #skills-content { }
-
+.button-more-info { margin-top: 30px; padding-top:5px; padding-bottom: 5px; padding-left: 10px; padding-right: 10px; background: #2f2f2f;}
+.row {margin:0;}
 a:hover {text-decoration: none;}
 
 @keyframes blinkk {
@@ -85,6 +85,7 @@ div {
 .bg.blue { background: #007bee; }
 .bg.red { background: #c60000; }
 .bg.light-black { background: #2f2f2f; }
+.bg.light-light-black { background: #3f3f3f; }
 
 .text.brackets { font-size: 170px; margin-top: -20px;}
 .text.icon { font-size: 58px; }
@@ -103,7 +104,7 @@ div {
 .text.blue { color: #007bee; }
 .text.red { color: #c60000; }
 .text.white { color: white; }
-.text.light-black { color: #444444; }
+.text.light-black { color: #2f2f2f; }
 
 .weight.fat { font-weight: 700; }
 .weight.normal { font-weight: 400; }
@@ -167,6 +168,12 @@ div {
 .padding-30 { padding:20px; }
 
 .padding-top-25 { padding-top: 25px; }
+.padding-left-50 { padding-left:50px; }
+.padding-right-50 { padding-right:50px; }
+.padding-left-10 { padding-left:10px; }
+.padding-right-10 { padding-right:10px; }
+.padding-left-right-10 { padding-right:10px; padding-left:10px; }
+.padding-left-right-20 { padding-right:20px; padding-left:20px; }
 
 .auto { width:auto; height: auto;}
 
