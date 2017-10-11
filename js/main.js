@@ -12,6 +12,11 @@ $(document).ready(function (){
 
 	$(window).scroll(function() {//OnScrollChange
 		var position = $(document).scrollTop(); //Position
+		if(position>1) {
+			$('.triangle').addClass('no-anim');
+		} else {
+			$('.triangle').removeClass('no-anim');
+		}
 	});
 	$(".scroll_link").click(function (e){//Scroll Link
 		toggle_focus=1; 

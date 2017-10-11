@@ -30,20 +30,14 @@ h4 { font-size: 18px; font-weight: 300; padding:0; margin:0;}
 #name_main {
 	font-size: 32px;
 	color: #2f2f2f;
-	position: absolute;
 	z-index: 10;
 	text-align: center;
-	top:50%;
-	left: 43%;
+	margin-top: 10%;
 }
 
 #name_main .description {
 	font-size: 16px;
 	color: #2f2f2f;
-}
-#cloud_bg {
-	position:relative;
-	z-index: -999;
 }
 #name_main .first {display:inline; color: rgba(47,47,47,0); transition: color 1s cubic-bezier(1,0,.86,.01);}
 #name_main .second {display:inline; color: rgba(47,47,47,0); transition: color 1.5s cubic-bezier(1,0,.86,.01);}
@@ -53,16 +47,43 @@ h4 { font-size: 18px; font-weight: 300; padding:0; margin:0;}
 #name_main.active .second {display:inline; color: rgba(47,47,47,0.9);}
 #name_main.active .third {display:inline; color: rgba(47,47,47,0.9);}
 
-.display.block { display: block; }
+#cloud {position:absolute; width: 350px; height: 150px;background: rgba(255,162,48,0); transition: background 4s ease-in-out;border-radius: 100px;-webkit-border-radius: 100px;-moz-border-radius: 100px; top: 40%; transform: translateY(-50%); left: 50%; transform: translateX(-50%);}
+#cloud.active {background: rgba(255,162,48,0.6);}
+.triangle {width: 0;height: 0;border-style: solid;border-width: 30px 30px 0 30px;border-color: transparent transparent transparent transparent; position: absolute; bottom: 2%; transform: translateY(-50%); left: 50%; transform: translateX(-50%);
+	animation-duration: 1s; animation-name: blinkk; animation-iteration-count: infinite; animation-direction: alternate; transition: border-color 1s ease-in-out;}
+.triangle.no-anim { border-color: transparent transparent transparent transparent; animation-duration: 0s;}
+.circle { background: rgba(47,47,47,0.9); color:rgba(250,152,40,1); border-radius: 50%;width: 100px;height: 100px; position:relative; left: 50%; transform: translateX(-50%); margin-top: 600px; transition: background 0.25s ease-in-out; }
+.circle:hover { background: rgba(234,142,37,0.8); color: rgba(47,47,47,1); text-decoration: none;}
+.content_text { text-align: center; position: relative; animation-duration: 0s; margin-top: 250px; z-index: -10;}
+.grey_bar { width:100%; position: relative; background: #2f2f2f; text-align: center;}
+.grey_bar .bar_text {margin-top:30px; margin-bottom: 30px; position: relative; width: 50%; color: #D2D3CF; text-align: center; display:inline-block;}
 
+a:hover {text-decoration: none;}
+
+@keyframes blinkk {
+  from {
+    border-color: transparent transparent transparent transparent;
+  }
+
+  to {
+    border-color: #383838 transparent transparent transparent;
+  }
+}
+
+div {
+  
+}
+
+.display.block { display: block; }
 .align.to-left{ text-align: left; }
 .align.to-right{ text-align: right; }
 .align.center { text-align: center; }
 
+.bg.orange { background: #FA9828; }
 .bg.green { background: #12b41b; }
 .bg.blue { background: #007bee; }
 .bg.red { background: #c60000; }
-.bg.light-black { background: #444444; }
+.bg.light-black { background: #2f2f2f; }
 
 .text.brackets { font-size: 170px; margin-top: -20px;}
 .text.icon { font-size: 58px; }
@@ -76,6 +97,7 @@ h4 { font-size: 18px; font-weight: 300; padding:0; margin:0;}
 .text.xtiny { font-size: 8px; }
 .text.none { font-size: 0; }
 
+.text.orange { color:#FA9828; }
 .text.green { color: #12b41b; }
 .text.blue { color: #007bee; }
 .text.red { color: #c60000; }
@@ -143,6 +165,8 @@ h4 { font-size: 18px; font-weight: 300; padding:0; margin:0;}
 .padding-25 { padding:20px; }
 .padding-30 { padding:20px; }
 
+.padding-top-25 { padding-top: 25px; }
+
 .auto { width:auto; height: auto;}
 
 .border.light-black { border:solid 1px #444444; }
@@ -159,49 +183,3 @@ h4 { font-size: 18px; font-weight: 300; padding:0; margin:0;}
 .opacity.visible { opacity:1; }
 .opacity.half-visible { opacity:0.5; }
 
-#cloud {
-	width: 350px; height: 120px;
-	
-	background: #F28900;
-	transition: background 4s ease-in-out;
-	
-	border-radius: 100px;
-	-webkit-border-radius: 100px;
-	-moz-border-radius: 100px;
-	
-	position: fixed;
-	top:46%;
-	left:40%;
-}
-
-#cloud:after, #cloud:before {
-	content: '';
-	position: absolute;
-	background: #F28900;
-	transition: background 4s ease-in-out;
-	z-index: -1
-}
-#cloud.active {
-	background: #FFB159;
-}
-#cloud.active:after, #cloud.active:before {
-	background: #FFB159;
-}
-
-#cloud:after {
-	width: 100px; height: 100px;
-	top: -50px; left: 50px;
-	
-	border-radius: 100px;
-	-webkit-border-radius: 100px;
-	-moz-border-radius: 100px;
-}
-
-#cloud:before {
-	width: 180px; height: 180px;
-	top: -90px; right: 50px;
-	
-	border-radius: 200px;
-	-webkit-border-radius: 200px;
-	-moz-border-radius: 200px;
-}
