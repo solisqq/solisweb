@@ -13,6 +13,7 @@
 
     <!-- Czcionka-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&amp;subset=latin-ext" rel="stylesheet"> 
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Mój CSS -->
@@ -28,28 +29,40 @@
         <nav class="navbar" role="navigation">
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="#" class="scroll_link" data-dest="#main" id="navbar-main">Menu1</a></li>
-                    <li><a href="#" class="scroll_link" data-dest="#db_board" id="navbar-db">Menu2</a></li>
-                    <li><a href="#" class="scroll_link" data-dest="#lang_board" id="navbar-lang">Menu3</a></li>
-                    <li><a href="#" class="scroll_link" data-dest="#server_board" id="navbar-server">...</a></li>
+                    <br>
+                    <li class="text white mid">Ogólne</li>
+                    <li><a href="#" class="scroll_link" data-dest="#menu">Strona główna</a></li>
+                    <li><a href="#" class="scroll_link" data-dest="#skills">Umiejętności</a></li>
+                    <li><a href="#" class="scroll_link" data-dest="#examples">Przykładowe prace</a></li>
+                    <li><a href="#" class="scroll_link" data-dest="#contact_content">Kontakt</a></li>
+                    <br>
+                    <li class="text white mid">Dziedziny</li>
+                    <li><a href="#" class="scroll_link" data-dest="#main" id="navbar-main">Desktop (C#/C++/JAVA)</a></li>
+                    <li><a href="#" class="scroll_link" data-dest="#db_board" id="navbar-db">Mikrokontrolery (C++)</a></li>
+                    <li><a href="#" class="scroll_link" data-dest="#lang_board" id="navbar-lang">Mobilne (JAVA)</a></li>
+                    <li><a href="#" class="scroll_link" data-dest="#server_board" id="navbar-server">Grafika oraz strony</a></li>
                 </ul>
             </div>
         </nav>
+        <div class="menu_hint">
+            Najedź na pasek po lewej<br> stronie, by rozwinąć menu
+        </div>
     </div>
+    
 
     <div id = "cloud">
         <div id="name_main">Kamil Słotwiński<div class="description">
             <div class="first">Programista</div><div class="second"> & Automatyk</div><div class="third"> & Grafik</div></div>
         </div>
     </div>
-    <a href="">
+    <a href="#" class="scroll_link" data-dest="#skills">
         <div class="circle">
             <div class="align center padding-top-40">Przejdź dalej
             </div>
         </div>
     </a>
     <!--<div class="triangle"></div>-->
-    <div class="content_text">
+    <div class="content_text" id="skills">
         <div class="grey_bar">
             <div class="bar_text">
                 <div class="text orange mid">Witam, nazywam się Kamil Słotwiński.</div>
@@ -58,10 +71,10 @@
         </div>
     </div>
     <div id="skills_content bg orange">
-        <div class="align center text lrg margin-top-45">Umiejętności</div>
-        <div class="row margin-top-85">
-            <div class="col-lg-3"></div>
-            <div class="col-lg-3 text-center padding-left-right-50">
+        <div id="skills-text">Umiejętności</div>
+        <div class="row row-skills">
+            <div class="col-xl-3 col-lg-2 col-md-1 col-sm-1 col-12"></div>
+            <div class="col-xl-3 col-lg-4 col-md-5 col-sm-5 col-12 skills">
                 <i class="fa fa-microchip text icon-lrg light-black" aria-hidden="true"></i>
                 <br>
                 <div class="text xxsml margin-bottom-10">
@@ -71,7 +84,7 @@
                 </div>
                 <a href="" class="button-more-info">Dowiedz sie więcej</a>
             </div>
-            <div class="col-lg-3 text-center padding-left-right-50">
+            <div class="col-xl-3 col-lg-4 col-md-5 col-sm-5 col-12 skills">
                 <i class="fa fa-desktop text icon-lrg light-black" aria-hidden="true"></i>
                 <br>
                 <div class="text xxsml margin-bottom-10">
@@ -81,11 +94,11 @@
                 </div>
                 <a href="" class="button-more-info">Dowiedz sie więcej</a>
             </div>
-            <div class="col-lg-3"></div>
+            <div class="col-xl-3 col-lg-2 col-md-1 col-sm-1 col-12"></div>
         </div>
-        <div class="row margin-top-45">
-            <div class="col-lg-3"></div>
-            <div class="col-lg-3 text-center padding-left-right-50">
+        <div class="row row-skills">
+            <div class="col-xl-3 col-lg-2 col-md-1 col-sm-1 col-12"></div>
+            <div class="col-xl-3 col-lg-4 col-md-5 col-sm-5 col-12 skills">
                 <i class="fa fa-image text icon-lrg light-black" aria-hidden="true"></i>
                 <br>
                 <div class="text xxsml margin-bottom-10">
@@ -94,7 +107,7 @@
                 </div>
                 <a href="" class="button-more-info">Dowiedz sie więcej</a>
             </div>
-            <div class="col-lg-3 text-center padding-left-right-50">
+            <div class="col-xl-3 col-lg-4 col-md-5 col-sm-5 col-12 text-center skills">
                 <i class="fa fa-code text icon-lrg light-black" aria-hidden="true"></i>
                 <br>
                 <div class="text xxsml margin-bottom-10">
@@ -102,40 +115,54 @@
                 </div>
                 <a href="" class="button-more-info">Dowiedz sie więcej</a>
             </div>
-            <div class="col-lg-3"></div>
+            <div class="col-xl-3 col-lg-2 col-md-1 col-sm-1 col-12"></div>
         </div>
     </div>
 </div>
-<div class="grey_bar margin-top-85">
+<div class="grey_bar margin-top-85 margin-bottom-25" id="examples">
     <div class="bar_text">
-        <div class="text lrg orange">
-            Przykładowe projekty:
-        </div>
+        <div class="examples_text">Przykładowe projekty:</div>
         <div class="row margin-top-35">
-            <div class="col-lg-1"></div>
-            <div class="col-lg-4"><a href=""><img src="img/arm.jpg" width="360" height="240" class="img_examples"/></a></div>
-            <div class="col-lg-1"></div>
-            <div class="col-lg-4"><a href=""><img src="img/box.png" width="360" height="240" class="img_examples"/></a></div>
-            <div class="col-lg-2"></div>  
+            <div class="col-xl-1"></div>
+            <div class="col-xl-4 col-lg-5 col-md-12 col-sm-12"><a href=""><img src="img/arm.jpg" class="img_examples"/></a></div>
+            <div class="col-xl-1 col-lg-2 col-md-12 col-sm-12"></div>
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12"><a href=""><img src="img/box.png" class="img_examples"/></a></div>
+            <div class="col-xl-2 col-lg-1 col-md-12 col-sm-12"></div>  
         </div>
         <div class="row margin-top-25">
-            <div class="col-lg-1"></div>
-            <div class="col-lg-4"><a href=""><img src="img/car.jpg" width="360" height="240" class="img_examples"/></a></div>
-            <div class="col-lg-1"></div>
-            <div class="col-lg-4"><a href=""><img src="img/img1.jpg" width="360" height="240" class="img_examples"/></a></div>
-            <div class="col-lg-2"></div>  
+            <div class="col-xl-1"></div>
+            <div class="col-xl-4 col-lg-5 col-md-12 col-sm-12"><a href=""><img src="img/car.jpg" class="img_examples"/></a></div>
+            <div class="col-xl-1 col-lg-2 col-md-12 col-sm-12"></div>
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12"><a href=""><img src="img/img1.jpg" class="img_examples"/></a></div>
+            <div class="col-xl-2 col-lg-1 col-md-12 col-sm-12"></div>  
         </div>
         <div class="row margin-top-25">
-            <div class="col-lg-1"></div>
-            <div class="col-lg-4"><a href=""><img src="img/portfolio-2.jpg" width="360" height="240" class="img_examples"/></a></div>
-            <div class="col-lg-1"></div>
-            <div class="col-lg-4"><a href=""><img src="img/player.png" width="360" height="240" class="img_examples"/></a></div>
-            <div class="col-lg-2"></div>  
+            <div class="col-xl-1"></div>
+            <div class="col-xl-4 col-lg-5 col-md-12 col-sm-12"><a href=""><img src="img/portfolio-2.jpg" class="img_examples"/></a></div>
+            <div class="col-xl-1 col-lg-2 col-md-12 col-sm-12"></div>
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12"><a href=""><img src="img/player.png"class="img_examples"/></a></div>
+            <div class="col-xl-2 col-lg-1 col-md-12 col-sm-12"></div>  
         </div>
     </div>
 </div>
 <div id="contact_content">
-    Jakiś content
+    <div class="text lrg light-black margin-bottom-25">
+        Kontakt
+    </div>
+    <div class="row margin-bottom-45">
+        <div class="col-xl-4 col-lg-3 col-md-1 col-sm-1"></div>
+        <div class="col-xl-2 col-lg-3 col-md-5 col-sm-5 padding-left-right-20 text xsml"><span class="glyphicon glyphicon-envelope text icon"></span><br>Napisz do mnie e-maila na adres <a href=""><br><b>kamil-slotwinski@outlook.com</b><br></a>. Postaram się odpisać w jak najkrótszym czasie.</div>
+        <div class="col-xl-2 col-lg-3 col-md-5 col-sm-5 padding-left-right-20 text xsml"><span class="glyphicon glyphicon-earphone text icon"></span><br>Skontaktuj się ze mna przez telefon, mój numer: <br><b>797 166 820</b><br>. Powinienem być dostępny w godzinach 08:00-19:00.</div>
+        <div class="col-xl-4 col-lg-3 col-md-1 col-sm-1"></div>
+    </div>
+    <a href="https://www.facebook.com/profile.php?id=100000882980826"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+    <div class="margin-top-45 text sml">
+        Zachodnia 4/17, Lublin 20-620
+    </div>
+    <div class="margin-top-5 text xsml">
+        Wszelkie prawa zastrzeżone <b>© Kamil Słotwiński 2017</b>
+    </div>
+    
 </div>
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>

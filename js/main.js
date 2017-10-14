@@ -10,6 +10,10 @@ $(document).ready(function (){
 	$('#cloud').addClass('active');
 	$('#name_main').addClass('active');
 
+	$("#menu").hover(function() {
+		$( '.menu_hint' ).addClass( 'invisible' );
+	});
+
 	$(window).scroll(function() {//OnScrollChange
 		var position = $(document).scrollTop(); //Position
 		if(position>1) {
@@ -40,4 +44,5 @@ $(document).ready(function (){
         }, "slow", function(){ toggle_focus=0; });
         console.log(destination);
     });
+    
 });
