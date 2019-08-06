@@ -10,9 +10,9 @@ $(document).ready(function (){
 	$('#cloud').addClass('active');
 	$('#name_main').addClass('active');
 
-	$("#menu").hover(function() {
+	/*$("#menu").hover(function() {
 		$( '.menu_hint' ).addClass( 'invisible' );
-	});
+	});*/
 
 	$(window).scroll(function() {//OnScrollChange
 		var position = $(document).scrollTop(); //Position
