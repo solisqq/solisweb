@@ -8,7 +8,7 @@
       <i class="fa fa-microchip icon" aria-hidden="true"></i>
       <br>
       <div class="categories_text">
-        Programowanie mikrokontrolerów
+        <b>Programowanie mikrokontrolerów</b>
       </div>
     </a>
   </div>
@@ -17,7 +17,7 @@
       <i class="fa fa-desktop icon" aria-hidden="true"></i>
       <br>
       <div class="categories_text">
-        Aplikacje desktopowe (C#/C++/JAVA)
+      <b>Algorytmy (C++)</b>
       </div>
     </a>
   </div>
@@ -30,16 +30,16 @@
       <i class="fa fa-image icon" aria-hidden="true"></i>
       <br>
       <div class="categories_text">
-        Projekty graficzne 
+      <b>Projekty graficzne</b> 
       </div>
     </a>
   </div>
   <div class="col-xl-3 col-lg-4 col-md-5 col-sm-5 col-12 categories">
-    <a href="wbudowie.php">
-      <i class="fa fa-code text icon" aria-hidden="true"></i>
+    <a target="_blank" rel="noopener noreferrer" href="https://www.thingiverse.com/solisqq/designs">
+      <i class="fa fa-cubes text icon" aria-hidden="true"></i>
       <br>
       <div class="categories_text">
-        Strony internetowe
+        <b>Projekty 3D</b>
       </div>
     </a>
   </div>

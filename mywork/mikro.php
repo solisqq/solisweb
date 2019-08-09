@@ -6,10 +6,10 @@
     
     <div class="col-xl-3 col-lg-4 col-md-5 col-sm-5 col-12 categories">
         <a href="dron.php" class="ahref">
-            <img src="img/a1.jpg" class="toShowImg"/>
+            <img src="img/d2.jpg" class="toShowImg"/>
             <br>
             <div class="categories_text">
-                Dron
+                Kwadrokopter
             </div>
         </a>
     </div>
@@ -18,7 +18,7 @@
             <img src="img/a2.jpg" class="toShowImg"/>
             <br>
             <div class="categories_text">
-                Ramie robota (+zasilacz)
+                Ramie robotyczne
             </div>
         </a>
     </div>

@@ -31,16 +31,16 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="index.php">Strona główna</a>
+          <a class="nav-link" href="../">Strona główna</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="desktop.php">Aplikacje desktopowe</a>
+          <a class="nav-link" href="desktop.php">Algorytmy</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="mikro.php">Programowanie mikrokontrolerów</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="wbudowie.php">Aplikacje mobilne</a>
+          <a target="_blank" rel="noopener noreferrer" class="nav-link" href="https://www.thingiverse.com/solisqq/designs">Projekty 3D</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="wbudowie.php">Strony oraz grafika</a>
